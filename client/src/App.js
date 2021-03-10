@@ -15,6 +15,7 @@ const Container = styled.div`
   background-color: #161616;
   min-width:100vw;
   min-height: 100vh;
+  width: fit-content;
 `;
 
 const TopPart = styled.div`

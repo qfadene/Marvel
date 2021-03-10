@@ -14,12 +14,18 @@ const Container = styled.div`
 const FirstLine = styled.div`
   display: flex;
   justify-content: center;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const SecondLine = styled.div`
   padding-top: 2rem;
   display: flex;
   justify-content: center;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const BottomContainer = styled.div`
