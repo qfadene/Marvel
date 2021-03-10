@@ -71,7 +71,6 @@ const Card = styled.div`
   margin-left: 2rem;
   color: #fff;
   transition-duration: 0.5s;
-  cursor: pointer;
   &:hover {
     color: #ed181e;
   }
@@ -89,7 +88,7 @@ const ImageCharacter = styled.img`
   margin: 0 auto;
   transition-duration: 0.5s;
   ${Card}:hover & {
-    opacity: 0.3;
+    opacity: 0.2;
     transform: scale(1.05);
   }
 `;
@@ -100,7 +99,7 @@ const ViewMore = styled.a`
   font-size: 30px;
   font-weight: 800;
   position: absolute;
-  top: 0;
+  top: 30px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -108,6 +107,7 @@ const ViewMore = styled.a`
   visibility: hidden;
   opacity: 0;
   transition-duration: 0.5s;
+  cursor: pointer;
   ${Card}:hover & {
     visibility: visible;
     opacity: 0.9;

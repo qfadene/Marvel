@@ -8,6 +8,8 @@ import useSetState from "./utils/useSetState";
 
 /** Import Internals */
 import Trombi from './components/trombi';
+import PageNumber from './components/pageNumber';
+
 
 const Container = styled.div`
   background-color: #161616;
@@ -75,6 +77,12 @@ function App() {
         onPreviousPage={handlePreviousPage}
         onNextPage={handleNextPage}
         page={state.page}
+      />
+      <PageNumber
+        onPreviousPage={handlePreviousPage}
+        onNextPage={handleNextPage}
+        page={state.page}
+        maxPage={Math.floor(state.arrayCharacters.length / 9)}
       />
     </Container>
   );
