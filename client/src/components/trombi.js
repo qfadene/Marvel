@@ -25,6 +25,7 @@ const SecondLine = styled.div`
   justify-content: center;
   @media (max-width: 600px) {
     flex-wrap: wrap;
+    padding-top: 0;
   }
 `;
 
@@ -33,6 +34,9 @@ const BottomContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 600px) {
+    align-items: flex-end;
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -61,10 +65,16 @@ const PageButton = styled.div`
 
 const ArrowPrevious = styled(SvgArrow)`
   width: 20px;
+  @media (max-width: 600px) {
+    width: 8px;
+  }
 `;
 const ArrowNext = styled(SvgArrow)`
   width: 20px;
   transform: rotate(180deg);
+  @media (max-width: 600px) {
+    width: 8px;
+  }
 `;
 
 const ButtonText = styled.div`
@@ -73,6 +83,9 @@ const ButtonText = styled.div`
   font-size: 2rem;
   color: #ed181e;
   opacity: 0.3;
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 
 const Card = styled.div`
@@ -88,6 +101,9 @@ const Card = styled.div`
   }
   @media (max-width: 1000px) {
     margin-left: 1rem;
+  }
+  @media (max-width: 600px) {
+    margin-top: 10px;
   }
 `;
 
