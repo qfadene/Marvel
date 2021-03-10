@@ -6,6 +6,9 @@ import SvgArrow from "../assets/svgArrow";
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 const FirstLine = styled.div`
@@ -33,6 +36,9 @@ const ButtonContainer = styled.div`
   align-items: center;
   text-align: center;
   margin-left: 2rem;
+  @media (max-width: 1000px) {
+    margin-left: 1rem;
+  }
 `;
 
 const PageButton = styled.div`
@@ -73,6 +79,9 @@ const Card = styled.div`
   transition-duration: 0.5s;
   &:hover {
     color: #ed181e;
+  }
+  @media (max-width: 1000px) {
+    margin-left: 1rem;
   }
 `;
 
@@ -115,6 +124,9 @@ const ViewMore = styled.a`
   &:hover {
     color: #ed181e;
   }
+  @media (max-width: 1000px) {
+    font-size: 1rem;
+  }
 `;
 
 const NameContainer = styled.div`
@@ -127,6 +139,16 @@ const NameCharacter = styled.div`
   text-transform: uppercase;
   font-family: Helvetica;
   font-weight: 600;
+  font-size: 1rem;
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
+  @media (max-width: 800px) {
+    font-size: 10px;
+  }
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 `;
 
 const Trombi = (props) => {
